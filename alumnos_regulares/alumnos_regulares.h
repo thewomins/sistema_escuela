@@ -19,12 +19,16 @@ using namespace std;
 class alumnos_regulares {
 public:
     alumnos_regulares();
-    alumnos_regulares(const alumnos_regulares& orig);
-    virtual ~alumnos_regulares();
+    string getnombre();
+    void setnombre(string nombre_alum);
+    string getrut();
+    void setrut(string rut_alum);
+    int getnumero_matricula();
 private:
     string nombre;
     string rut;
     int numero_matricula;
+    int generador_num_matricula();
 };
 
 #endif /* ALUMNOS_REGULARES_H */
