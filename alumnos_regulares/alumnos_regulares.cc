@@ -12,13 +12,31 @@
  */
 
 #include "alumnos_regulares.h"
+#include <iostream>
 
 alumnos_regulares::alumnos_regulares() {
 }
 
-alumnos_regulares::alumnos_regulares(const alumnos_regulares& orig) {
+string alumnos_regulares::getnombre(){
+    return nombre;
 }
 
-alumnos_regulares::~alumnos_regulares() {
+void alumnos_regulares::setnombre(string nombre_alum){
+    nombre=nombre_alum;
+}
+  
+string alumnos_regulares::getrut(){
+    return rut;
 }
 
+void alumnos_regulares::setrut(string rut_alum){
+    rut=rut_alum;
+}
+
+int alumnos_regulares::getnumero_matricula(){
+    return numero_matricula;
+}
+
+int alumnos_regulares::generador_num_matricula(){
+    
+}
