@@ -1,0 +1,13 @@
+
+************************************************
+Alumnos: Javier Torres Riquelme
+	 Felipe Urrutia Morales
+************************************************
+
+1) Los datos se ingresan automaticamente de "datos.txt" este contiene 2 alumnos regulares y 2 ramos de alumnos regulares y egresados
+
+2) Para inscribir ramos/ingresar notas/ver ramos inscritos se tiene que buscar primero el alumno
+
+3) Para poder ingresar notas el alumno debe tener por lo menos 1 ramo inscrito
+
+4) Para inscribir ramos debe por lo menos haber ingresado un ramo dependiendo el tipo de alumno
