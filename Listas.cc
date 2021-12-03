@@ -61,6 +61,7 @@ int Listas::buscar_alumno_reg(int rut, int inicio, int fin){
         cout<<"rut: "<<aux->alu.getrut()<<endl;
         return medio;
     }
+    return 0;
 }
 
 int Listas::largo_reg(){

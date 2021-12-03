@@ -1,11 +1,11 @@
 #ifndef LISTAS_H
 #define LISTAS_H
 #include <string>
-#include "alumnos_regulares/alumnos_regulares.h"
-#include "alumnos_egresados/alumnos_egresados.h"
-#include "alumnos_titulados/alumnos_titulados.h"
-#include "ramos_titular/ramos_titular.h"
-#include "ramos_regular_egresados/ramos_regular_egresados.h"
+#include "alumnos/alumnos_regulares.h"
+#include "alumnos/alumnos_egresados.h"
+#include "alumnos/alumnos_titulados.h"
+#include "ramos/ramos_titular.h"
+#include "ramos/ramos_regular_egresados.h"
 using namespace std;
 
 struct nodo_alum_regular{
