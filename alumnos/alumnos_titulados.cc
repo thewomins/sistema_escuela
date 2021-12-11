@@ -2,7 +2,20 @@
 #include <iostream>
 
 alumnos_titulados::alumnos_titulados() {
+    this->lista_ramos_tit = new Lista_ramos_titular();
 }
+
+alumnos_titulados::alumnos_titulados(string _nombre, int _rut, int _numero_matricula, string _empresa_practica, int _fecha_egreso, string _empresa_actual, int _ano_titulacion) {
+    this->setnombre(_nombre);
+    this->setrut(_rut);
+    this->setnumero_matricula(_numero_matricula);
+    this->setempresa_practica(_empresa_practica);
+    this->setfecha_egreso(_fecha_egreso);
+    this->empresa_actual = _empresa_actual;
+    this->ano_titulacion = _ano_titulacion;
+    this->lista_ramos_tit = new Lista_ramos_titular();
+}
+
 int alumnos_titulados::getano_titulacion(){
     return this->ano_titulacion;
 }
@@ -19,7 +32,7 @@ void alumnos_titulados::setempresa_actual(string empresa_act) {
     this->empresa_actual = empresa_act;
 }
 
-void alumnos_titulados::ingresar_ramos_tit(ramos_titular _ramos){
+/*void alumnos_titulados::ingresar_ramos_tit(ramos_titular _ramos){
     this->ramos_tit[this->ramos_inscritos]=_ramos;
     this->ramos_inscritos=this->ramos_inscritos+1;
 }
@@ -54,4 +67,4 @@ void alumnos_titulados::set_tesis(string titulo, string profesor_guia){
 void alumnos_titulados::get_tesis(){
     cout<<"Titulo: "<<this->_tesis.gettitulo()<<endl;
     cout<<"Profesor guia: "<<this->_tesis.getprofesor_guia()<<endl;
-}
+}*/

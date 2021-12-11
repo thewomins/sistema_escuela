@@ -2,14 +2,15 @@
 #include <iostream>
 
 alumnos_regulares::alumnos_regulares() {
+    this->lista_ramos = new Lista_ramos_regular();
 }
 
 alumnos_regulares::alumnos_regulares(string _nombre, int _rut, int _numero_matricula){
+    this->lista_ramos = new Lista_ramos_regular();
     this->nombre=_nombre;
     this->rut=_rut;
     this->numero_matricula=_numero_matricula;
 }
-
 
 string alumnos_regulares::getnombre(){
     return this->nombre;
@@ -36,7 +37,7 @@ void alumnos_regulares::setnumero_matricula(int num){
 }
 
 
-int alumnos_regulares::get_ramos_inscritos(){
+/*int alumnos_regulares::get_ramos_inscritos(){
     return this->ramos_inscritos;
 }
 
@@ -65,12 +66,12 @@ void alumnos_regulares::get_prom(){
 }
 
 void alumnos_regulares::muestra_ramos(){
-    for(int i=0;i<this->ramos_inscritos;i++){
+   for(int i=0;i<this->ramos_inscritos;i++){
         cout<<i+1<<") "<<this->ramos[i].getnombre_ramo()<<endl;
     }
 }
 
 void alumnos_regulares::ingresar_nota(int nota,int pos_ramo){
-    this->ramos[pos_ramo].ingresar_notas(nota);
+    //this->ramos[pos_ramo].ingresar_notas(nota);
 }
-
+*/

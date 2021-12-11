@@ -1,7 +1,9 @@
 #ifndef ALUMNOS_REGULARES_H
 #define ALUMNOS_REGULARES_H
 #include <string>
-#include "../ramos/ramos_regular_egresados.h"
+#include "../listas/lista_ramos_regular_egresados.h"
+
+//#include "../notas/notas.h"
 using namespace std;
 
 class alumnos_regulares {
@@ -14,15 +16,17 @@ public:
     void setrut(int rut_alum);
     void setnumero_matricula(int num);
     int getnumero_matricula();
-    void ingresar_ramos(ramos_regular_egresados _ramos);
-    void get_ramos();
+    //void ingresar_ramos(ramos_regular_egresados _ramos);
+    /*void get_ramos();
     void muestra_ramos();
     int get_ramos_inscritos();
     void ingresar_nota(int nota,int pos_ramo);
-    void get_prom();
+    void get_prom();*/
+    Lista_ramos_regular *lista_ramos;
     
 private:
-    ramos_regular_egresados ramos[6];
+    //ramos_regular_egresados ramos[6];
+    
     string nombre;
     int rut;
     int numero_matricula;

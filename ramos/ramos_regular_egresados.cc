@@ -33,7 +33,7 @@ void ramos_regular_egresados::setnumero_semestre(int numero_sem){
     this->numero_semestre = numero_sem;
 }
 
-void ramos_regular_egresados::ingresar_notas(int _notas){
+/*void ramos_regular_egresados::ingresar_notas(int _notas){
     this->nota[this->cantidad_notas].setnota(_notas);
     this->cantidad_notas=this->cantidad_notas+1;
 }
@@ -59,4 +59,4 @@ int ramos_regular_egresados::get_promedio(){
 
 int ramos_regular_egresados::get_cantidad_notas(){
     return this->cantidad_notas;
-}
+}*/
